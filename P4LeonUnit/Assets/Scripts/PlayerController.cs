@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
             Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position);
 
             Debug.Log("Collided with: " +  collision.gameObject.name + " with powerup set to " + hasPowerup);
-            enemyRigidbody.AddForce(awayFromPlayer * powerupStrength, ForceMode.Impulse);
+            enemyRigidbody.AddForce(awayFromPlayer * 10, ForceMode.Impulse);
         }
     }
 }
